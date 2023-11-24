@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="1671174132_2-7.jpg">
+    <div id="name">
+        <div id="opacitynot">
+            <h1>Name company</h1>
+        </div>
+        <div id="button">
+            <a href=""><button class="buttons">Главная</button></a>
+            <a href=""><button class="buttons">Оставить отзыв</button></a>
+
+        </div>
+    </div>
+    <div id="center">
+        <div class="content">
+            <h1>WI-FI login System</h1>
+            <h3>Login </h3>
+            <input type="phon number" placeholder="Ваш номер телефона" id="Login">
+            <h3>Password</h3>
+            <input type="password" placeholder="Ваш пороль" id="password">
+            <div id="butt" onclick="Input()">
+                <button class="buttons">Login in WI-FI</button>
+
+            </div>
+            
+            
+        </div>
+
+    </div>
+    
+</body>
+<script type="text/javascript">
+    function Input(){
+    login_ok = false;
+    user_name = "";
+    password = "";
+    user_name = document.getElementById("Login");
+    console.log(user_name);
+    user_name = user_name.value.toLowerCase();
+    password = document.getElementById("password");
+    password = password.value.toLowerCase();
+    console.log(password);
+    console.log(user_name)
+    if (user_name=="guest" && password=="niga") {
+     login_ok = true;
+     window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }
+    if (user_name=="work" && password=="work456") {
+     login_ok = true;
+     window.location = "work.html";
+    }
+    
+    if (login_ok==false) alert("Invalid username or password!");
+    }
+    </script>
+</html>
